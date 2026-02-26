@@ -3,12 +3,12 @@ import cors from "cors"
 import dotenv from "dotenv"
 import {pool} from "./database.js"
 
-await pool.query(`CREATE TABLE IF NOT EXIST Movies(
-    id INT auto_increment PRIMARY key,
-    title VARCHAR(50) NOT NULL,
-    year INT NOT NULL,
-    genre VARCHAR(50) NOT NULL)
-`)
+// await pool.query(`CREATE TABLE IF NOT EXIST Movies(
+//     id INT auto_increment PRIMARY key,
+//     title VARCHAR(50) NOT NULL,
+//     year INT NOT NULL,
+//     genre VARCHAR(50) NOT NULL)
+// `)
 const PORT = process.env.PORT || 3000
 const app = express()
 app.use(express.json())
